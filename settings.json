@@ -59,7 +59,7 @@
     "greg": {
       "source": {
         "source": "directory",
-        "path": "$USERPROFILE/.config/claude/.greg/plugins"
+        "path": "~/.config/claude/.greg/plugins"
       }
     }
   },

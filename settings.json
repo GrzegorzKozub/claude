@@ -1,0 +1,74 @@
+{
+  "syncClaudeAiSkills": false,
+  "syncClaudeAiPlugins": false,
+  "env": {
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_IDE_SKIP_AUTO_INSTALL": "1",
+    "CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS": "250000",
+    "DISABLE_AUTOUPDATER": "1",
+    "DISABLE_BUG_COMMAND": "1",
+    "DISABLE_ERROR_REPORTING": "1",
+    "DISABLE_TELEMETRY": "1",
+    "ENABLE_CLAUDEAI_MCP_SERVERS": "0",
+    "STATUSLINE_COMPACT_HINT_TOKENS": "250000"
+  },
+  "permissions": {
+    "allow": [
+      "WebFetch",
+      "WebSearch",
+      "mcp__github"
+    ],
+    "deny": [
+      "Edit(//**/*.*env)",
+      "Edit(//**/*.cert)",
+      "Edit(//**/*.crt)",
+      "Edit(//**/*.env)",
+      "Edit(//**/*.key)",
+      "Edit(//**/*.pem)",
+      "Edit(//**/.ssh/**)",
+      "Edit(//**/BraveSoftware/**)",
+      "Edit(//**/keys/**)",
+      "Edit(//**/pass/**)",
+      "Read(//**/*.*env)",
+      "Read(//**/*.cert)",
+      "Read(//**/*.crt)",
+      "Read(//**/*.env)",
+      "Read(//**/*.key)",
+      "Read(//**/*.pem)",
+      "Read(//**/.ssh/**)",
+      "Read(//**/BraveSoftware/**)",
+      "Read(//**/keys/**)",
+      "Read(//**/pass/**)"
+    ],
+    "defaultMode": "auto",
+    "blockReadsOutsideWorkingDirectories": false,
+    "blockWritesOutsideWorkingDirectories": false
+  },
+  "model": "opus[1m]",
+  "disableRemoteControl": true,
+  "statusLine": {
+    "type": "command",
+    "command": "pwsh -NoProfile -NonInteractive -File \"$CLAUDE_CONFIG_DIR/statusline.ps1\"",
+    "hideVimModeIndicator": true
+  },
+  "enabledPlugins": {
+    "lsp@greg": true,
+    "mcp@greg": true
+  },
+  "extraKnownMarketplaces": {
+    "greg": {
+      "source": {
+        "source": "directory",
+        "path": "$USERPROFILE/.config/claude/.greg/plugins"
+      }
+    }
+  },
+  "effortLevel": "medium",
+  "awaySummaryEnabled": false,
+  "tui": "fullscreen",
+  "timeFormat": "24-hour",
+  "skipWorkflowUsageWarning": true,
+  "theme": "custom:gruvbox-material-dark",
+  "editorMode": "vim",
+  "teammateMode": "tmux"
+}

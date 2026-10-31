@@ -16,7 +16,7 @@
     "allow": [
       "WebFetch",
       "WebSearch",
-      "mcp__github"
+      "mcp__plugin_mcp_github"
     ],
     "deny": [
       "Edit(//**/*.*env)",

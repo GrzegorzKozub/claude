@@ -205,8 +205,8 @@ if ($AGENT) {
 }
 
 # Usage limits (/usage): 5-hour and 7-day windows
-$ICON_5H = [char]::ConvertFromUtf32(0xF051B)  # nf-md-timer_outline
-$ICON_7D = [char]::ConvertFromUtf32(0xF0679)  # nf-md-calendar_range
+$ICON_5H = [char]::ConvertFromUtf32(0xF0150)  # 󰅐
+$ICON_7D = [char]::ConvertFromUtf32(0xF00EE)  # 󰃮
 $limits = foreach ($w in @(@($ICON_5H, $data.rate_limits.five_hour), @($ICON_7D, $data.rate_limits.seven_day))) {
     $pct = $w[1].used_percentage
     if ($null -eq $pct -or $pct -eq '') { continue }

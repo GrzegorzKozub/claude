@@ -3,6 +3,8 @@
 !/.greg/
 !/themes/
 
+!/.editorconfig
+!/.gitattributes
 !/.gitignore
 
 !/keybindings.json
